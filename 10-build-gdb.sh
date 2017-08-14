@@ -44,6 +44,7 @@ LDFLAGS="-L$addon_tools_dir/lib" \
 	--disable-shared \
 	--disable-nls \
 	--disable-threads \
+	--disable-werror \
     --with-libexpat-prefix=$addon_tools_dir/lib \
 	--with-libexpat \
 	|| { echo "Error configuring gdb"; exit 1; }
